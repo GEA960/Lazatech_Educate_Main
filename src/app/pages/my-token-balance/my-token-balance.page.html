@@ -1,0 +1,38 @@
+<ion-header class="pages-header">
+  <ion-toolbar>
+    <ion-title>Token Balance</ion-title>
+
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div>
+    <ion-card>
+      <ion-card-content>
+        <ion-item lines="none">
+          <p>Tokens can be used for purchasing different products from us.</p>
+        </ion-item>
+
+        <ion-item>
+          <ion-icon name="person-circle-outline" slot="start" size="large"></ion-icon>
+          <ion-card-subtitle>{{user?.userName}}</ion-card-subtitle>
+        </ion-item>
+
+        <ion-item>
+          <ion-icon name="wallet-outline" slot="start" size="large"></ion-icon>
+          <ion-card-subtitle>Token Balance: {{user?.userToken}}.00</ion-card-subtitle>
+        </ion-item>
+
+        <!-- for testing purposes only -->
+        <!-- <ion-item>
+          <ion-button (click)="add()">Add Token</ion-button>
+        </ion-item> -->
+
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

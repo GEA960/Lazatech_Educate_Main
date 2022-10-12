@@ -1,0 +1,59 @@
+<ion-header class="pages-header">
+  <ion-toolbar>
+    <ion-title>Quizzes</ion-title>
+
+    <ion-buttons slot="start" *ngIf="!show">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Course 1: Getting to know LAZATECH EDUCATE AND ITS SOCIAL MEDIA COUNTERPART</ion-card-title>
+      <ion-card-subtitle>Lesson 1: An introduction to Treasury XRPL</ion-card-subtitle>
+      <ion-card-subtitle>Lesson 2: Why has Lazatech made the XRPL it’s home? </ion-card-subtitle>
+      <ion-card-subtitle>Lesson 3: Lazatech Social Media Website </ion-card-subtitle>
+      <ion-card-subtitle>Lesson 5: Lazatech Educate</ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-content>
+      <ion-button *ngIf="!show" (click)="answer()">Take Quiz</ion-button>
+      <ion-list *ngIf="show">
+          <ion-radio-group [(ngModel)]="qAnswer" >
+            <ion-list-header>
+              <ion-label>Question: {{index + 1}} {{qstn[index].questionText}}</ion-label>
+            </ion-list-header>
+
+            <ion-item *ngIf="qstn[index].option1">
+              <ion-label>{{qstn[index].option1}}</ion-label>
+              <ion-radio slot="start" [value]="qstn[index].option1"></ion-radio>
+            </ion-item>
+        
+            <ion-item *ngIf="qstn[index].option2">
+              <ion-label>{{qstn[index].option2}}</ion-label>
+              <ion-radio slot="start" [value]="qstn[index].option2"></ion-radio>
+            </ion-item>
+        
+            <ion-item *ngIf="qstn[index].option3">
+              <ion-label>{{qstn[index].option3}}</ion-label>
+              <ion-radio slot="start" [value]="qstn[index].option3"></ion-radio>
+            </ion-item>
+
+            <ion-item *ngIf="qstn[index].option4">
+              <ion-label>{{qstn[index].option4}}</ion-label>
+              <ion-radio slot="start" [value]="qstn[index].option4"></ion-radio>
+            </ion-item>
+
+            <ion-button expand="block" (click)="answer()" > Confirm </ion-button>
+          </ion-radio-group>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  
+</ion-content>
