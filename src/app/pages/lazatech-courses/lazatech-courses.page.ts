@@ -27,40 +27,40 @@ export class LazatechCoursesPage implements OnInit {
     if (id == 'course2'){
       this.router.navigate(['/course2'])
     }
-    else if (id == 'course3'){
+    if (id == 'course3'){
       this.alert('Alert', 'This course is currently unavailable')
     }
-    else if (id == 'course4'){
+    if (id == 'course4'){
       this.alert('Alert', 'This course is currently unavailable')
     }
-    else if (id == 'course5'){
+    if (id == 'course5'){
       this.alert('Alert', 'This course is currently unavailable')
     }
-    else if (id == 'course6'){
+    if (id == 'course6'){
       this.alert('Alert', 'This course is currently unavailable')
     }
-    else if (id == 'course7'){
+    if (id == 'course7'){
       this.router.navigate(['/course7'])
     }
-    else if (id == 'course8'){
-      this.alert('Alert', 'This course is currently unavailable')
+    if (id == 'course8'){
+      this.router.navigate(['/course8'])
     }
-    else if (id == 'course9'){
-      this.alert('Alert', 'This course is currently unavailable')
+    if (id == 'course9'){
+      this.router.navigate(['/course9'])
     }
-    else if (id == 'course10'){
-      this.alert('Alert', 'This course is currently unavailable')
+    if (id == 'course10'){
+      this.router.navigate(['/course10'])
     }
-    else if (id == 'course11'){
-      this.alert('Alert', 'This course is currently unavailable')
+    if (id == 'course11'){
+      this.router.navigate(['/course11'])
     }
-    else if (id == 'course12'){
-      this.alert('Alert', 'This course is currently unavailable')
+    if (id == 'course12'){
+      this.router.navigate(['/course12'])
     }
-    else if (id == 'course13'){
-      this.alert('Alert', 'This course is currently unavailable')
+    if (id == 'course13'){
+      this.router.navigate(['/course13'])
     }
-    else if (id == this.none){
+    if (id == this.none){
       this.alert('Alert', 'This course is currently unavailable')
     }
   }

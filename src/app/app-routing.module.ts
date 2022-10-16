@@ -54,9 +54,6 @@ const routes: Routes = [
     loadChildren: () => import('./pages/course2/course2.module').then( m => m.Course2PageModule)
   },
   {
-    path: '**',
-    loadChildren: () => import('./pages/page-not-found/page-not-found.module').then( m => m.PageNotFoundPageModule)
-  },  {
     path: 'course3',
     loadChildren: () => import('./pages/course3/course3.module').then( m => m.Course3PageModule)
   },
@@ -100,6 +97,11 @@ const routes: Routes = [
     path: 'course13',
     loadChildren: () => import('./pages/course13/course13.module').then( m => m.Course13PageModule)
   },
+  {
+    path: '**',
+    loadChildren: () => import('./pages/page-not-found/page-not-found.module').then( m => m.PageNotFoundPageModule)
+  },
+  
 
 
 
