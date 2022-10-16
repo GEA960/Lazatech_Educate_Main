@@ -40,7 +40,7 @@ export class LazatechCoursesPage implements OnInit {
       this.alert('Alert', 'This course is currently unavailable')
     }
     else if (id == 'course7'){
-      this.alert('Alert', 'This course is currently unavailable')
+      this.router.navigate(['/course7'])
     }
     else if (id == 'course8'){
       this.alert('Alert', 'This course is currently unavailable')
