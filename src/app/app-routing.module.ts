@@ -50,9 +50,14 @@ const routes: Routes = [
     loadChildren: () => import('./pages/course1/course1.module').then( m => m.Course1PageModule)
   },
   {
+    path: 'course2',
+    loadChildren: () => import('./pages/course2/course2.module').then( m => m.Course2PageModule)
+  },
+  {
     path: '**',
     loadChildren: () => import('./pages/page-not-found/page-not-found.module').then( m => m.PageNotFoundPageModule)
-  }
+  },
+
 
 ];
 
