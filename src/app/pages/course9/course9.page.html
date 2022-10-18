@@ -12,5 +12,208 @@
 </ion-header>
 
 <ion-content>
+  
+  <p class=MsoNormal style='margin-bottom:0in;line-height:14.25pt;background:
+  white'><span style='font-size:10.5pt;font-family:Consolas;color:black'>1.1.3 PHP and MySQL Web Development</span></p>
+    
+    <p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
+    font-family:"Times New Roman",serif'>Reference from: �Web Development Using PHP
+    And MySQL� by knowledgeHut (2022) and �PHP and MySQL Web Development: A Trend
+    that Never Fades Away� by Neil (2019).<br>
+    <br>
+    </span></b><span style='font-size:12.0pt;line-height:107%;font-family:"Times New Roman",serif'>PHP
+    (or PHP Hypertext Preprocessor) is a server-side scripting language that is
+    used to create dynamic web pages that can interact with databases. It is a
+    widely-used open source language that is specifically used for web application
+    development and can be embedded within HTML.&nbsp;In addition to the article on
+    PHP &amp; MySQL&nbsp;be sure to check out the important blog post on&nbsp;</span><a
+    href="https://www.knowledgehut.com/blog/web-development/what-is-markdown"><span
+    style='font-size:12.0pt;line-height:107%;font-family:"Times New Roman",serif'>what
+    is markdown</span></a><span style='font-size:12.0pt;line-height:107%;
+    font-family:"Times New Roman",serif'>.<br>
+    <br>
+    </span></p>
+    
+    <p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
+    font-family:"Times New Roman",serif'>Why PHP?</span></b></p>
+    
+    <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
+    "Times New Roman",serif'>The distinguishing feature of PHP is that the
+    scripting code is executed on the server, which generates HTML that is sent
+    back to the client. The client receives the result of executing the script
+    without knowing the underlying code. Developers can configure the web server to
+    process all the HTML files (containing the PHP script).</span></p>
+    
+    <p class=MsoNormal><a
+    href="https://www.knowledgehut.com/web-development/php-and-mysql-training"
+    target="_blank"><span style='font-size:12.0pt;line-height:107%;font-family:
+    "Times New Roman",serif'>PHP course</span></a><span style='font-size:12.0pt;
+    line-height:107%;font-family:"Times New Roman",serif'>&nbsp;is easy to learn
+    for any newcomer, but also offers advanced programming features.</span></p>
+    
+    <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
+    "Times New Roman",serif'>&nbsp;</span></p>
+    
+    <p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
+    font-family:"Times New Roman",serif'>Using PHP with a database system</span></b></p>
+    
+    <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
+    "Times New Roman",serif'>PHP, as a scripting language, is popular among web
+    developers because of its ability to interact with database systems including
+    Oracle and MySQL.</span></p>
+    
+    <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
+    "Times New Roman",serif'>This article discusses the use of PHP scripting
+    language with the MySQL database. Any website can require a variety of data or
+    information to display and to retrieve them from the database. This can include
+    display of a simple list to the running of the website based on data stored in
+    the database.</span></p>
+    
+    <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
+    "Times New Roman",serif'>Listed below are some examples where PHP and MySQL can
+    be used together:</span></p>
+    
+    <ul style='margin-top:0in' type=disc>
+     <li class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
+         "Times New Roman",serif'>Digital Ad banners, where the PHP script can be
+         used to retrieve a digital banner from the database, which then selects a
+         random banner from its table records and sends it back to the calling
+         script. The PHP script can also maintain a count of banner views and
+         clicks from the website.</span></li>
+     <li class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
+         "Times New Roman",serif'>Internet forums or digital boards, which use PHP
+         and MySQL to store and retrieve user messages.</span></li>
+     <li class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
+         "Times New Roman",serif'>Website designing, where the design of an entire
+         website can be changed using a couple of PHP scripts, instead of changing
+         and uploading each web page. The PHP script can access the MySQL database
+         to retrieve all information about the web page.</span></li>
+    </ul>
+    
+    <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
+    "Times New Roman",serif'>&nbsp;</span></p>
+    
+    <p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
+    font-family:"Times New Roman",serif'>Setting up the MySQL database</span></b></p>
+    
+    <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
+    "Times New Roman",serif'>The procedure of setting up the MySQL database varies
+    according to the host. Every database would require a user name and password,
+    in order to access the database.</span></p>
+    
+    <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
+    "Times New Roman",serif'>Database administration can be done using PHP scripts
+    or using a program like PHPMyAdmin.</span></p>
+    
+    <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
+    "Times New Roman",serif'>The next step is to create the database tables for
+    storing the website information. Creating a database table using PHPMyAdmin is
+    also simple. Alternatively, one can create and configure the entire database
+    using the following PHP script:</span></p>
+    
+    <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
+    "Times New Roman",serif'>����������� CREATE TABLE tablename "{{ '{'}}" Fields "{{ '}'}}"</span></p>
+    
+    <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
+    "Times New Roman",serif'>����������� Where the Fields are coded as fieldname
+    type(length) extra_info </span></p>
+    
+    <p class=MsoNormal style='text-indent:.5in'><span style='font-size:12.0pt;
+    line-height:107%;font-family:"Times New Roman",serif'>Example: first
+    varchar(15) NOT NULL</span></p>
+    
+    <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
+    "Times New Roman",serif'>The following command is used in the PHP script to
+    connect to the MySQL database:</span></p>
+    
+    <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
+    "Times New Roman",serif'>����������������������� mysql_connect(localhost,$username,$password);</span></p>
+    
+    <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
+    "Times New Roman",serif'>where:</span></p>
+    
+    <ul style='margin-top:0in' type=disc>
+     <li class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
+         "Times New Roman",serif'>localhost is the server address on which the web
+         site is running,</span></li>
+     <li class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
+         "Times New Roman",serif'>$username is the user name for the database
+         access</span></li>
+     <li class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
+         "Times New Roman",serif'>$password is the password for the database access</span></li>
+    </ul>
+    
+    <p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
+    font-family:"Times New Roman",serif'>Executing PHP commands</span></b></p>
+    
+    <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
+    "Times New Roman",serif'>After configuring and connecting to the MySQL
+    database, you can start executing PHP commands on the server.</span></p>
+    
+    <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
+    "Times New Roman",serif'>Following are the 2 methods of executing a PHP
+    command:</span></p>
+    
+    <p class=MsoNormal style='text-indent:.5in'><span style='font-size:12.0pt;
+    line-height:107%;font-family:"Times New Roman",serif'>Entering the command in
+    PHP using the following syntax:</span></p>
+    
+    <p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
+    font-family:"Times New Roman",serif'>����������������������� Mysql_query($query)</span></b></p>
+    
+    <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
+    "Times New Roman",serif'>This form of command can be used to repeat the command
+    simply by changing the variable.</span></p>
+    
+    <ul style='margin-top:0in' type=disc>
+     <li class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
+         "Times New Roman",serif'>Defining the command as a variable. The result of
+         the operation will be assigned to the variable.</span></li>
+    </ul>
+    
+    <p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
+    font-family:"Times New Roman",serif'><br>
+    Conclusion</span></b></p>
+    
+    <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
+    "Times New Roman",serif'>If you want dynamic, scalable and high-performing web
+    apps, then PHP and MySQL web development is the perfect option. Moreover, this
+    combo offers cost-effective development also because both of them are
+    open-sourced.</span></p>
+    
+    <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
+    "Times New Roman",serif'>PHP and MySQL can be a superb option for businesses in
+    the e-commerce domain. The security of this database management system is
+    unbeatable. If you are planning to get a web application developed then you
+    must consider this option and contact PHP programmers who can work according to
+    your needs and visions.</span></p>
+    
+    <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
+    "Times New Roman",serif'>If you have anything else to add or want to review
+    this article, you are most welcome to reach me through the comment section
+    below.</span></p>
+    
+    <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
+    "Times New Roman",serif'>&nbsp;</span></p>
+    
+    <h1><b><span style='font-size:12.0pt;line-height:107%;font-family:"Times New Roman",serif;
+    color:windowtext'>References</span></b></h1>
+    
+    <p class=MsoBibliography style='margin-left:.5in;text-indent:-.5in'><span
+    style='font-size:12.0pt;line-height:107%;font-family:"Times New Roman",serif'>KnowledgeHut.
+    (2022, September 16). <i>Web Development Using PHP And MySQL</i>. Retrieved
+    October 2022, from knowledgehut.com:
+    https://www.knowledgehut.com/blog/programming/web-development-using-php-mysql</span></p>
+    
+    <p class=MsoBibliography style='margin-left:.5in;text-indent:-.5in'><span
+    style='font-size:12.0pt;line-height:107%;font-family:"Times New Roman",serif'>Neil,
+    T. (2019, August 20). <i>PHP and MySQL Web Development: A Trend that Never
+    Fades Away</i>. Retrieved October 2022, from hackernoon.com:
+    https://hackernoon.com/php-and-mysql-web-development-a-trend-that-never-fades-away-s32v230je</span></p>
+    
+    <p class=MsoNormal>&nbsp;</p>
+    
+    <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
+    "Times New Roman",serif'>&nbsp;</span></p>
 
 </ion-content>
