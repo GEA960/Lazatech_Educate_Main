@@ -64,4 +64,9 @@ div.lesson_content {
     b.bullet {
         font-size: 16px;
     }
+    pre {
+        overflow-x: auto;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
 }
